@@ -1,0 +1,158 @@
+
+*{
+    margin: 0%;
+padding: 0%;
+}
+body{
+    margin: 12px;
+    box-shadow: 0 0 100px #999;
+    background-color: white;
+}
+nav{
+    display: flex;
+    justify-content: flex-start;
+}
+nav h3{ 
+margin: 20px;
+    }
+nav ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    margin: auto;
+    
+}
+nav ul li{
+    color: white;
+    background-color: #999;
+    padding: 0.5em;
+}
+nav ul li:hover{
+    color: white;
+    background-color: #333;
+    padding: 0.5em;
+    cursor: pointer;
+}
+nav img{
+    padding: 0.5em;
+    width: 40px;
+    height: 40px;
+    
+    border-radius: 60px;
+}
+.body{
+    width: auto;
+    height:auto;
+   display: flex; 
+   flex-wrap: wrap;
+justify-content: space-between;
+}
+.body h3{
+    text-align: center;
+    margin: 0.5em;
+}
+.group{
+    background-color: white;
+    width: 50%;
+    box-shadow: 0 5px 9px 0 gainsboro;
+    height: 65vh;
+}
+.scroll{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    width:90%;
+    height:50vh ;
+    background-color: rgb(86, 76, 76);
+    margin: 1.5em 1em 0.5em 1em ;
+}
+.gallery{
+width: 30%;
+height: auto;
+padding: 0.2em;
+}
+.gallery:hover{
+    transition: 200ms;
+    transform: translateY(1em);
+    width: 30%;
+    height: auto;
+    padding: 0.2em;
+    cursor: pointer;
+    }
+.profile{
+    background-color: #999;
+    background-size: auto;
+width: 40%;
+height: 65vh;
+padding: 0 2em 0 0;
+margin: 0 2em 0 0 ;
+}
+.background{
+    background-image: url(pictures/YAA.jpg );
+    background-position: cover;
+    background-size: 100% 60vh;
+    background-repeat: no-repeat;
+width: 100%;
+height: 70vh;
+margin: 0 1em 1em 1em;
+ } 
+ .pic{
+width: 40%;
+height: 30vh;
+
+ }
+.pic img{
+    transition: 800ms;
+   border: solid 4px rgb(21, 15, 11);
+   margin: 10em 10em 0 9em;
+     border-radius: 150px;
+
+}
+.pic img:hover{
+    transition: 800ms;
+    width: 60%;
+    height: 20vh;
+    border-radius: 200px;
+    margin: 15em 10em 0 12em;
+}
+
+.load{
+    
+    padding-left: 0.5em;
+}
+
+.load .enter{
+    width: 90%;
+    height: 30px;
+   border-radius: 6px;
+ 
+}
+.load .enter:hover{
+    width: 90%;
+    height: 30px;
+   border-radius: 6px;
+  cursor: pointer;
+}
+/* media smaller screen */
+@media screen and (max-width:700px) {
+    body{
+
+        margin: 12px;
+        box-shadow: 0 0 100px #999;
+        background-color: white;
+    }
+    .pic img{
+        transition: 800ms;
+       border: solid 4px rgb(21, 15, 11);
+       margin: 12em 10em 0 5em;
+         border-radius: 150px;
+    
+    }
+    .pic img:hover{
+        transition: 800ms;
+        width: 60%;
+        height: 20vh;
+        border-radius: 200px;
+        margin: 16em 10em 0 6em;
+    }
+}
